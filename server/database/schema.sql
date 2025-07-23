@@ -1,21 +1,25 @@
-create table user (
-  id int unsigned primary key auto_increment not null,
-  email varchar(255) not null unique,
-  password varchar(255) not null
+CREATE TABLE projet (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  titre VARCHAR(150) NOT NULL,
+  description TEXT,
+  image_url VARCHAR(255) NOT NULL,
+  lien_site VARCHAR(255),
+  lien_github VARCHAR(255) NOT NULL
 );
 
-create table item (
-  id int unsigned primary key auto_increment not null,
-  title varchar(255) not null,
-  user_id int unsigned not null,
-  foreign key(user_id) references user(id)
+CREATE TABLE skill (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nom VARCHAR(100)
 );
 
-insert into user(id, email, password)
-values
-  (1, "jdoe@mail.com", "123456");
+CREATE TABLE projet_skill (
+  projet_id INT,
+  skill_id INT,
+  PRIMARY KEY (projet_id, skill_id),
+  FOREIGN KEY(projet_id) REFERENCES projet(id),
+  FOREIGN KEY(skill_id) REFERENCES skill(id)
+);
 
-insert into item(id, title, user_id)
-values
-  (1, "Stuff", 1),
-  (2, "Doodads", 1);
+
+
+

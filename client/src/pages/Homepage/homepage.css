@@ -1,0 +1,163 @@
+.pres-section {
+  height: 100vh;
+  background-image: url("/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pres-detail {
+  text-align: center;
+  color: white;
+}
+
+.pres-detail h1 {
+  font-size: 1.8rem;
+}
+
+.pres-detail {
+  font-size: 1.1rem;
+}
+
+.about-section {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.about-section h2 {
+  margin-bottom: 16px;
+}
+
+.about-section p {
+  color: #9a9a9a;
+  margin-bottom: 20px;
+}
+
+.plus-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+.plus-button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.project-section {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #1d1d1d;
+}
+
+.project-section p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: #9a9a9a;
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.project-card {
+  border: 1px solid #cdcdcd;
+  padding: 16px;
+}
+
+.pluss-button {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #cdcdcd;
+  font-weight: bold;
+}
+
+.pluss-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.skill-section {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.skill-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.bar {
+  background-color: #333;
+  border-radius: 6px;
+  height: 10px;
+  margin-bottom: 16px;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.fill.html {
+  width: 90%;
+  background: linear-gradient(90deg, #f16529, #f78c6c);
+}
+.fill.css {
+  width: 85%;
+  background: linear-gradient(90deg, #2965f1, #5faaff);
+}
+.fill.js {
+  width: 60%;
+  background: linear-gradient(90deg, #f0db4f, #ffe97f);
+}
+.fill.react {
+  width: 80%;
+  background: linear-gradient(90deg, #61dafb, #9beffb);
+}
+.fill.ts {
+  width: 80%;
+  background: linear-gradient(90deg, #3178c6, #75a7f7);
+}
+
+.fill.mysql {
+  width: 70%;
+  background: linear-gradient(90deg, #00758f, #00b5ad);
+}
+.fill.express {
+  width: 65%;
+  background: linear-gradient(90deg, #444, #999);
+}
+.fill.git {
+  width: 80%;
+  background: linear-gradient(90deg, #f05032, #f97d5c);
+}
+.fill.node {
+  width: 70%;
+  background: linear-gradient(90deg, #68a063, #a6d39e);
+}

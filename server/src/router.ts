@@ -6,6 +6,13 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
+// Define projet-related routes
+import projetActions from "./modules/projet/projetActions";
+
+router.get("/api/projets", projetActions.browse);
+
+/* ************************************************************************* */
+
 // Define item-related routes
 import itemActions from "./modules/item/itemActions";
 
