@@ -1,6 +1,6 @@
 import type { RequestHandler } from "express";
-import ProjetRepository from "./projetRepository";
 import type { ProjetType } from "../../../lib/definition";
+import ProjetRepository from "./projetRepository";
 
 const browse: RequestHandler = async (req, res, next) => {
   try {
