@@ -1,12 +1,13 @@
 import databaseClient from "../../../database/client";
 import type { Result, Rows } from "../../../database/client";
-import type { ProjetType } from "../../../lib/definition";
+import type { ProjetType, ProjetTypeSansId } from "../../../lib/definition";
 
 class ProjetRepository {
-  async create(projet: Omit<ProjetType, "id">) {
-    // Execute the SQL INSERT query to add a new item to the "item" table
+  async create(projet: ProjetTypeSansId): Promise<number> {
+    // Insertion du projet
     const [result] = await databaseClient.query<Result>(
-      "insert into projet (titre, description, image_url, lien_site, lien_github) values (?, ?, ?, ?, ?)",
+      `INSERT INTO projet (titre, description, image_url, lien_site, lien_github)
+     VALUES (?, ?, ?, ?, ?)`,
       [
         projet.titre,
         projet.description,
@@ -16,7 +17,16 @@ class ProjetRepository {
       ],
     );
 
-    return result.insertId;
+    const projetId = result.insertId;
+
+    for (const skill of projet.skills) {
+      await databaseClient.query(
+        "INSERT INTO projet_skill (projet_id, skill_id) VALUES (?, ?)",
+        [projetId, skill.id],
+      );
+    }
+
+    return projetId;
   }
 
   async readAll() {
@@ -48,6 +58,21 @@ class ProjetRepository {
     };
 
     return projet;
+  }
+
+  async update(projet: ProjetType) {
+    const [result] = await databaseClient.query<Result>(
+      "UPDATE projet SET titre = ?, description = ?, image_url = ?, lien_site = ?, lien_github = ? WHERE id = ?",
+      [
+        projet.titre,
+        projet.description,
+        projet.image_url,
+        projet.lien_site,
+        projet.lien_github,
+        projet.id,
+      ],
+    );
+    return result.affectedRows;
   }
 }
 
