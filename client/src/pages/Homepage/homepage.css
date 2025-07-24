@@ -14,11 +14,15 @@
 }
 
 .pres-detail h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .pres-detail {
   font-size: 1.1rem;
+}
+.pres-detail p {
+  font-size: 2rem;
+  text-shadow: 0 0 0 1px #00758f;
 }
 
 .about-section {
@@ -79,6 +83,11 @@
 .project-card {
   border: 1px solid #cdcdcd;
   padding: 16px;
+}
+
+.project-card img {
+  width: 100%;
+  border-bottom: 1px solid #eee;
 }
 
 .pluss-button {
@@ -160,4 +169,12 @@
 .fill.node {
   width: 70%;
   background: linear-gradient(90deg, #68a063, #a6d39e);
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }

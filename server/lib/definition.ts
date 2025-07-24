@@ -1,3 +1,8 @@
+export type SkillType = {
+  id: number;
+  nom: string;
+};
+
 export type ProjetType = {
   id: number;
   titre: string;
@@ -5,4 +10,5 @@ export type ProjetType = {
   image_url: string;
   lien_site: string;
   lien_github: string;
+  skills: SkillType[];
 };

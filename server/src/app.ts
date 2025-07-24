@@ -56,6 +56,7 @@ app.use(
 // app.use(express.urlencoded());
 // app.use(express.text());
 // app.use(express.raw());
+app.use("/uploads", express.static("public/uploads"));
 
 /* ************************************************************************* */
 
