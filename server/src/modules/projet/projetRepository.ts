@@ -1,8 +1,24 @@
 import databaseClient from "../../../database/client";
-import type { Rows } from "../../../database/client";
+import type { Result, Rows } from "../../../database/client";
 import type { ProjetType } from "../../../lib/definition";
 
 class ProjetRepository {
+  async create(projet: Omit<ProjetType, "id">) {
+    // Execute the SQL INSERT query to add a new item to the "item" table
+    const [result] = await databaseClient.query<Result>(
+      "insert into projet (titre, description, image_url, lien_site, lien_github) values (?, ?, ?, ?, ?)",
+      [
+        projet.titre,
+        projet.description,
+        projet.image_url,
+        projet.lien_site,
+        projet.lien_github,
+      ],
+    );
+
+    return result.insertId;
+  }
+
   async readAll() {
     const [rows] = await databaseClient.query<Rows>("select * from projet");
 

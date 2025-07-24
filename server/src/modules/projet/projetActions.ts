@@ -13,7 +13,6 @@ const browse: RequestHandler = async (req, res, next) => {
 
 const readByProject: RequestHandler = async (req, res, next) => {
   try {
-    // Fetch a specific item based on the provided ID
     const projetId = Number(req.params.id);
     const projet = await ProjetRepository.read(projetId);
 
@@ -27,4 +26,22 @@ const readByProject: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { browse, readByProject };
+const add: RequestHandler = async (req, res, next) => {
+  try {
+    const newProject = {
+      titre: req.body.titre,
+      description: req.body.description,
+      image_url: req.body.image_url,
+      lien_site: req.body.lien_site,
+      lien_github: req.body.lien_github,
+    };
+
+    const insertId = await ProjetRepository.create(newProject);
+
+    res.status(201).json({ insertId });
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { browse, readByProject, add };
