@@ -13,3 +13,12 @@ export type ProjetType = {
   lien_github: string;
   skills?: SkillType[];
 };
+
+export type ProjetTypeSansId = {
+  titre: string;
+  description: string;
+  image_url: string;
+  lien_site: string;
+  lien_github: string;
+  skills: SkillType[];
+};
