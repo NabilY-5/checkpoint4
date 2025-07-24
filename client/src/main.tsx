@@ -10,9 +10,9 @@ import App from "./App";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
+import About from "./pages/About/About";
 import Homepage from "./pages/Homepage/Homepage";
 import Projects from "./pages/Projects/Projects";
-import About from "./pages/About/About";
 // import Contact from "./pages/Contact";
 
 /* ************************************************************************* */
