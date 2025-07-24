@@ -1,0 +1,95 @@
+.about-me-section,
+.formation-section,
+.vision-section {
+  padding: 40px 20px;
+  color: #1d1d1d;
+}
+
+.about-me-section {
+  background-color: #fff;
+}
+
+.formation-section {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.vision-section {
+  background-color: #fff;
+}
+
+.about-me-section h2,
+.formation-section h2,
+.vision-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-me-section h3,
+.formation-section h3,
+.vision-section h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-me-section p,
+.formation-section p,
+.vision-section p {
+  margin-bottom: 20px;
+}
+
+.about-img {
+  display: block;
+  max-width: 180px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.formation-list {
+  padding-left: 18px;
+}
+
+.formation-list li {
+  margin-bottom: 8px;
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me-section,
+  .formation-section,
+  .vision-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+
+  .about-me-section h2,
+  .formation-section h2,
+  .vision-section h2 {
+    font-size: 36px;
+  }
+
+  .about-me-section h3,
+  .formation-section h3,
+  .vision-section h3 {
+    font-size: 22px;
+  }
+
+  .about-me-section p,
+  .formation-section p,
+  .vision-section p {
+    font-size: 16px;
+  }
+
+  .about-img {
+    max-width: 160px;
+    margin-bottom: 30px;
+  }
+
+  .formation-list li {
+    font-size: 15px;
+  }
+}
