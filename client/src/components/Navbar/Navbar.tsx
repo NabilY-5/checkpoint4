@@ -11,7 +11,9 @@ const Navbar = () => {
         ☰
       </button>
 
-      <img src="/initiales.jpg" alt="logo NY" className="logo" />
+      <NavLink to="/">
+        <img src="/initiales.jpg" alt="logo NY" className="logo" />
+      </NavLink>
 
       <nav className={open ? "menu open" : "menu"}>
         <NavLink to="/" className="nav-link" onClick={() => setOpen(false)}>

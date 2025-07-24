@@ -74,6 +74,18 @@ class ProjetRepository {
     );
     return result.affectedRows;
   }
+
+  async delete(id: number) {
+    await databaseClient.query("DELETE FROM projet_skill WHERE projet_id = ?", [
+      id,
+    ]);
+    const [result] = await databaseClient.query<Result>(
+      "DELETE FROM projet WHERE id = ?",
+      [id],
+    );
+
+    return result.affectedRows;
+  }
 }
 
 export default new ProjetRepository();
