@@ -126,3 +126,52 @@
   padding: 6px 12px;
   border-radius: 20px;
 }
+
+@media screen and (min-width: 1200px) {
+  .project-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 80px;
+  }
+
+  .project-intro h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .project-intro p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .project-ca h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-ca p,
+  .proj-links a {
+    font-size: 1.1rem;
+  }
+
+  .modal-content {
+    max-width: 700px;
+  }
+
+  .skills-list {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .skills-list li {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}

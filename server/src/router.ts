@@ -13,15 +13,7 @@ router.get("/api/projets", projetActions.browse);
 router.get("/api/projets/:id", projetActions.readByProject);
 router.put("/api/projets/:id", projetActions.edit);
 router.post("/api/projets", projetActions.add);
-/* ************************************************************************* */
-
-// Define item-related routes
-import itemActions from "./modules/item/itemActions";
-
-router.get("/api/items", itemActions.browse);
-router.get("/api/items/:id", itemActions.read);
-router.post("/api/items", itemActions.add);
-
+router.delete("/api/projets/:id", projetActions.destroy);
 /* ************************************************************************* */
 
 export default router;

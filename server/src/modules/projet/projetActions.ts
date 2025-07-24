@@ -69,4 +69,16 @@ const edit: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { browse, readByProject, edit, add };
+const destroy: RequestHandler = async (req, res, next) => {
+  try {
+    const projetId = Number(req.params.id);
+
+    await ProjetRepository.delete(projetId);
+
+    res.sendStatus(204);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { browse, readByProject, edit, add, destroy };
