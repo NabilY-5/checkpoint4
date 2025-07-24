@@ -7,7 +7,7 @@ const Homepage = () => {
     <main>
       <section className="pres-section">
         <div className="pres-detail">
-          <h1>N Y</h1>
+          <h1>NABIL YAHYA</h1>
           <p>DÉVELOPPEUR WEB</p>
         </div>
       </section>
@@ -15,14 +15,15 @@ const Homepage = () => {
       <section className="about-section">
         <h2>A PROPOS DE MOI</h2>
         <p>
-          Je m'appelle N Y. Je suis développeur web junior, fraîchement issu
-          d'une formation intensive où j'ai appris à transformer des idées en
-          interfaces fonctionnelles. Je conçois des sites modernes en utilisant
-          des technologies actuelles comme HTML, CSS, JavaScript et React. À
-          travers ce portfolio, je souhaite partager ma vision du développement
-          : claire, fluide, et esthétique. Passionné par la créativité digitale
-          et les détails qui font la différence, je m'efforce de créer des
-          projets qui racontent une histoire, et peut-être la vôtre.
+          Je m'appelle Nabil YAHYA. Je suis développeur web junior, fraîchement
+          issu d'une formation intensive où j'ai appris à transformer des idées
+          en interfaces fonctionnelles. Je conçois des sites modernes en
+          utilisant des technologies actuelles comme HTML, CSS, JavaScript et
+          React. À travers ce portfolio, je souhaite partager ma vision du
+          développement : claire, fluide, et esthétique. Passionné par la
+          créativité digitale et les détails qui font la différence, je
+          m'efforce de créer des projets qui racontent une histoire, et
+          peut-être la vôtre.
         </p>
         <NavLink to="/about" className="plus-button">
           PLUS
@@ -87,6 +88,17 @@ const Homepage = () => {
             <div className="fill git" />
           </div>
         </div>
+      </section>
+      <section className="contact-section">
+        <h2>ON RESTE EN CONTACT ?</h2>
+        <p>
+          Envie de créer quelque chose ? Que ce soit pour un projet web, une
+          mission freelance ou juste pour échanger, je suis toujours ouvert aux
+          bonnes idées
+        </p>
+        <NavLink to="/contact" className="contact-button">
+          ME CONTACTER
+        </NavLink>
       </section>
     </main>
   );

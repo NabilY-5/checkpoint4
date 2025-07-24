@@ -31,6 +31,13 @@ const Navbar = () => {
         >
           PROJETS
         </NavLink>
+        <NavLink
+          to="/contact"
+          className="nav-link"
+          onClick={() => setOpen(false)}
+        >
+          CONTACT
+        </NavLink>
       </nav>
     </div>
   );

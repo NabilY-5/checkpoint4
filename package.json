@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/  (hit Enter to use an empty string)/checkpoint-4.git"
   },
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "check": "biome check --error-on-warnings --no-errors-on-unmatched --staged . && npm run check-types --workspaces --if-present",
@@ -36,6 +39,7 @@
     "validate-branch-name": "^1.3.2"
   },
   "dependencies": {
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.5"
   }
 }

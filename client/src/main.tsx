@@ -11,9 +11,9 @@ import App from "./App";
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
 import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 import Homepage from "./pages/Homepage/Homepage";
 import Projects from "./pages/Projects/Projects";
-// import Contact from "./pages/Contact";
 
 /* ************************************************************************* */
 
@@ -27,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Homepage /> },
       { path: "/projects", element: <Projects /> },
       { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
     ], // Renders the App component for the home page
   },
   // Try adding a new route! For example, "/about" with an About component
