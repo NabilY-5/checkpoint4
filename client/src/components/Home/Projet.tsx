@@ -15,27 +15,9 @@ const Projet = () => {
     <div className="project-detail">
       {projets.map((projet) => (
         <div key={projet.id} className="project-card">
-          s
           <img src={projet.image_url} alt={projet.titre} />
           <h3>{projet.titre}</h3>
           <p>{projet.description}</p>
-          <div className="project-links">
-            <a
-              href={projet.lien_site}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Site
-            </a>
-            |
-            <a
-              href={projet.lien_github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </div>
         </div>
       ))}
     </div>

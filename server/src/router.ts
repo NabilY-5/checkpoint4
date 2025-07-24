@@ -10,7 +10,7 @@ const router = express.Router();
 import projetActions from "./modules/projet/projetActions";
 
 router.get("/api/projets", projetActions.browse);
-
+router.get("/api/projets/:id", projetActions.readByProject);
 /* ************************************************************************* */
 
 // Define item-related routes

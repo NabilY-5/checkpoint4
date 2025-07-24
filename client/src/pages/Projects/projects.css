@@ -1,0 +1,128 @@
+.d-s {
+  padding: 40px 20px;
+  background-color: #1e1e1e;
+}
+
+.project-intro h2 {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-intro p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.l-s {
+  padding: 40px 20px;
+}
+
+.project-ca {
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.loupe {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .loupe {
+  opacity: 1;
+}
+
+.project-ca h3 {
+  font-size: 1.3rem;
+  margin: 1rem 1rem 0.5rem;
+}
+
+.project-ca p {
+  margin: 0 1rem 1rem;
+  color: #444;
+}
+
+.proj-links {
+  margin: 0 1rem 1rem;
+}
+
+.proj-links a {
+  color: #444;
+  margin: 0 5px;
+}
+
+.proj-links a:hover {
+  color: #f5c518;
+}
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 80%;
+}
+
+.modal-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.modal-content button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1rem 0;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 20px;
+}

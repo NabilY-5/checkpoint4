@@ -9,7 +9,8 @@ CREATE TABLE projet (
 
 CREATE TABLE skill (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  nom VARCHAR(100)
+  nom VARCHAR(100),
+  icon_url VARCHAR(255)
 );
 
 CREATE TABLE projet_skill (
@@ -19,7 +20,3 @@ CREATE TABLE projet_skill (
   FOREIGN KEY(projet_id) REFERENCES projet(id),
   FOREIGN KEY(skill_id) REFERENCES skill(id)
 );
-
-
-
-
