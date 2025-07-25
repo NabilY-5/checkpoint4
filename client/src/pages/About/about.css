@@ -102,4 +102,8 @@
   .formation-list li {
     font-size: 15px;
   }
+
+  .vision-section {
+    border: 1px solid #ccc;
+  }
 }
