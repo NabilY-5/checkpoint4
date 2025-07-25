@@ -1,5 +1,5 @@
 import "./about.css";
-import { FaBookOpen, FaSearch, FaWrench, FaUsers } from "react-icons/fa";
+import { FaBookOpen, FaSearch, FaUsers, FaWrench } from "react-icons/fa";
 
 const About = () => {
   return (
