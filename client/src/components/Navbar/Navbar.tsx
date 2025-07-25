@@ -7,29 +7,38 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img src="/initiales.jpg" alt="logo NY" className="logo" />
-
       <button type="button" className="burger" onClick={() => setOpen(!open)}>
         ☰
       </button>
 
+      <NavLink to="/">
+        <img src="/initiales.jpg" alt="logo NY" className="logo" />
+      </NavLink>
+
       <nav className={open ? "menu open" : "menu"}>
         <NavLink to="/" className="nav-link" onClick={() => setOpen(false)}>
-          Accueil
+          ACCUEIL
         </NavLink>
         <NavLink
           to="/about"
           className="nav-link"
           onClick={() => setOpen(false)}
         >
-          À propos
+          À PROPOS
         </NavLink>
         <NavLink
           to="/projects"
           className="nav-link"
           onClick={() => setOpen(false)}
         >
-          Projets
+          PROJETS
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className="nav-link"
+          onClick={() => setOpen(false)}
+        >
+          CONTACT
         </NavLink>
       </nav>
     </div>

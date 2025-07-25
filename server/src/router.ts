@@ -6,13 +6,14 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
-// Define item-related routes
-import itemActions from "./modules/item/itemActions";
+// Define projet-related routes
+import projetActions from "./modules/projet/projetActions";
 
-router.get("/api/items", itemActions.browse);
-router.get("/api/items/:id", itemActions.read);
-router.post("/api/items", itemActions.add);
-
+router.get("/api/projets", projetActions.browse);
+router.get("/api/projets/:id", projetActions.readByProject);
+router.put("/api/projets/:id", projetActions.edit);
+router.post("/api/projets", projetActions.add);
+router.delete("/api/projets/:id", projetActions.destroy);
 /* ************************************************************************* */
 
 export default router;

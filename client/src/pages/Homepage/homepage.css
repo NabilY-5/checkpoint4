@@ -1,0 +1,258 @@
+.pres-section {
+  height: 100vh;
+  background-image: url("/fond.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pres-detail {
+  text-align: center;
+  color: white;
+}
+
+.pres-detail h1 {
+  font-size: 2rem;
+}
+
+.pres-detail {
+  font-size: 1.1rem;
+}
+.pres-detail p {
+  font-size: 2rem;
+  text-shadow: 0 0 0 1px #00758f;
+}
+
+.about-section {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.about-section h2 {
+  margin-bottom: 16px;
+}
+
+.about-section p {
+  color: #9a9a9a;
+  margin-bottom: 20px;
+}
+
+.plus-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+.plus-button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.project-section {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #1d1d1d;
+}
+
+.project-section p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  color: #9a9a9a;
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.project-card {
+  border: 1px solid #cdcdcd;
+  padding: 16px;
+}
+
+.project-card img {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.pluss-button {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #cdcdcd;
+  font-weight: bold;
+}
+
+.pluss-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.skill-section {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.skill-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.bar {
+  background-color: #333;
+  border-radius: 6px;
+  height: 10px;
+  margin-bottom: 16px;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.fill.html {
+  width: 60%;
+  background: linear-gradient(90deg, #f16529, #f78c6c);
+}
+.fill.css {
+  width: 65%;
+  background: linear-gradient(90deg, #2965f1, #5faaff);
+}
+.fill.js {
+  width: 50%;
+  background: linear-gradient(90deg, #f0db4f, #ffe97f);
+}
+.fill.react {
+  width: 60%;
+  background: linear-gradient(90deg, #61dafb, #9beffb);
+}
+.fill.ts {
+  width: 80%;
+  background: linear-gradient(90deg, #3178c6, #75a7f7);
+}
+
+.fill.mysql {
+  width: 40%;
+  background: linear-gradient(90deg, #00758f, #00b5ad);
+}
+.fill.express {
+  width: 55%;
+  background: linear-gradient(90deg, #444, #999);
+}
+.fill.git {
+  width: 75%;
+  background: linear-gradient(90deg, #f05032, #f97d5c);
+}
+.fill.node {
+  width: 70%;
+  background: linear-gradient(90deg, #68a063, #a6d39e);
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section {
+  background-color: #f5f5f5;
+  color: #1e1e1e;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.contact-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.contact-section p {
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.contact-button {
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #1e1e1e;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+@media (min-width: 1200px) {
+  .pres-detail h1 {
+    font-size: 3.2rem;
+  }
+
+  .pres-detail p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-shadow: #000000;
+  }
+
+  .about-section p,
+  .project-section p,
+  .contact-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .project-detail {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 500px;
+    margin: 12px;
+  }
+
+  .skill-bar {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .plus-button,
+  .pluss-button,
+  .contact-button {
+    display: inline-block;
+    margin-top: 24px;
+  }
+  .project-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
