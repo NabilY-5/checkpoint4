@@ -1,4 +1,5 @@
 import "./about.css";
+import { FaBookOpen, FaSearch, FaUsers, FaWrench } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           autodidacte, souvent de manière intuitive, sans passer par une
           formation technique au départ. Au fil de mes expériences
           professionnelles, j'ai effleuré le développement web sans jamais en
-          approfondir les fondations — jusqu'à ce que je me lance pleinement.
+          approfondir les fondations; jusqu'à ce que je me lance pleinement.
           Curieux de nature, j'aime apprendre, expérimenter, découvrir ce qui se
           cache derrière les interfaces qu'on utilise chaque jour. Grâce à ma
           formation actuelle, j'ai pu acquérir les bases théoriques du
@@ -55,26 +56,32 @@ const About = () => {
       <section className="vision-section">
         <h2>VISION & VALEURS</h2>
 
-        <h3>Apprentissage continu</h3>
-        <p>
-          Le développement web est pour moi un terrain d'exploration permanent.
-          Chaque projet est une opportunité d'apprendre et de tester.
-        </p>
+        <div className="vision-item">
+          <FaBookOpen className="vision-icon" />
+          <h3>Apprentissage continu</h3>
+          <p>
+            Le développement web est pour moi un terrain d'exploration
+            permanent...
+          </p>
+        </div>
 
-        <h3>Curiosité & autonomie</h3>
-        <p>
-          Je suis guidé par une curiosité naturelle. Plutôt que d'attendre les
-          réponses, je vais les chercher et je les construis.
-        </p>
+        <div className="vision-item">
+          <FaSearch className="vision-icon" />
+          <h3>Curiosité & autonomie</h3>
+          <p>Je suis guidé par une curiosité naturelle...</p>
+        </div>
 
-        <h3>Création utile</h3>
-        <p>
-          Le code est bien plus qu'un outil technique : il permet de résoudre
-          des problèmes concrets et de créer des expériences qui ont du sens.
-        </p>
+        <div className="vision-item">
+          <FaWrench className="vision-icon" />
+          <h3>Création utile</h3>
+          <p>Le code est bien plus qu'un outil technique...</p>
+        </div>
 
-        <h3>Collaboration & partage</h3>
-        <p>Le travail d'équipe et les échanges me motivent.</p>
+        <div className="vision-item">
+          <FaUsers className="vision-icon" />
+          <h3>Collaboration & partage</h3>
+          <p>Le travail d'équipe et les échanges me motivent.</p>
+        </div>
       </section>
     </div>
   );
